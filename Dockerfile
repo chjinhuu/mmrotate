@@ -1,7 +1,3 @@
-FROM chjinhuu/detectron:v2.0.0
-RUN pip install -U openmim
-RUN mim install mmcv-full
-RUN mim install mmdet\<3.0.0
-RUN pip install terminaltables -i https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install e2cnn
-RUN conda list
+FROM chjinhuu/mmrotate:v1.0.2
+RUN pip install e2cnn==0.2.3
+RUN pip install sympy==1.10.1
